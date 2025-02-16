@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE RAJ'S CAFE</title>
+  <link rel="stylesheet" href="cafe.css">
+  <!-- Font Awesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">THE RAJ'S CAFE</h1>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to THE RAJ'S CAFE</h2>
+      <p>Your perfect coffee experience awaits.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="item"><h3>Espresso</h3><p>Rich and bold coffee shot.</p><span>₹150</span></div>
+        <div class="item"><h3>Cappuccino</h3><p>Creamy coffee with steamed milk foam.</p><span>₹180</span></div>
+        <div class="item"><h3>Latte</h3><p>Smooth coffee with milk.</p><span>₹200</span></div>
+        <div class="item"><h3>Americano</h3><p>Espresso diluted with hot water.</p><span>₹160</span></div>
+        <div class="item"><h3>Mocha</h3><p>Espresso with chocolate and steamed milk.</p><span>₹220</span></div>
+        <div class="item"><h3>Macchiato</h3><p>Espresso with a dollop of milk foam.</p><span>₹190</span></div>
+        <div class="item"><h3>Flat White</h3><p>Espresso with velvety steamed milk.</p><span>₹210</span></div>
+        <div class="item"><h3>Affogato</h3><p>Espresso poured over vanilla ice cream.</p><span>₹250</span></div>
+        <div class="item"><h3>Turkish Coffee</h3><p>Strong and aromatic traditional coffee.</p><span>₹170</span></div>
+        <div class="item"><h3>Cold Brew</h3><p>Slow-steeped coffee, smooth and refreshing.</p><span>₹200</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-item">
+        <p>"The best coffee I've ever had! Highly recommend the cappuccino."</p>
+        <span>- Shahrukh Khan</span>
+      </div>
+      <div class="testimonial-item">
+        <p>"Amazing ambiance and friendly staff. A must-visit cafe!"</p>
+        <span>- Salman Khan</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-images">
+        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg" alt="Coffee Image 1">
+        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" alt="Coffee Image 2">
+        <img src="https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg" alt="Coffee Image 3">
+        <img src="https://images.pexels.com/photos/6347/coffee-cup-working-happy.jpg" alt="Coffee Image 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>&copy; 2025 THE RAJ'S CAFE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Go to top">↑</button>
+
+  <script>
+    window.onscroll = function() {
+      const backToTopButton = document.getElementById('back-to-top');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    };
+
+    document.getElementById('back-to-top').onclick = function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
+  </script>
+</body>
+</html>
